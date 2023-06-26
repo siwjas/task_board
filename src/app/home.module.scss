@@ -1,7 +1,14 @@
 .title {
   text-align: center;
   color: #2b2d42;
+  font-weight: 700;
     span {
       color: #fb8500;
     }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
