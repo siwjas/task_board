@@ -1,0 +1,24 @@
+.donationBtn {
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+
+  button {
+    padding: 1rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f7b801;
+    box-shadow: 0 0 5px rgba($color: #343a40, $alpha: .3);
+    color: #141A29;
+    font-weight: bold;
+    transition: ease .5s;
+
+    &:hover {
+      background-color: #57cc99;
+      color: #e5e5e5;
+      transform: scale(1.2);
+    }
+  }
+}

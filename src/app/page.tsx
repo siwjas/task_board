@@ -1,8 +1,8 @@
 import styles from './home.module.scss'
 import Image from 'next/image'
 import { FiCheckCircle } from 'react-icons/fi'
-import boardUser from '../../public/board-user.svg'
-import Sponsors from '@/components/Sponsors'
+import boardUser from './assets/board-user.svg'
+import Sponsors from '../components/Sponsors'
 
 export default function Home() {
   

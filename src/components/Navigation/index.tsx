@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import {usePathname, useRouter} from 'next/navigation'
-import logo from '../../../public/logo.svg'
+import logo from '../../app/assets/logo.svg'
 import styles from './menu.module.scss'
 import Link from 'next/link'
 import SignInButton from '../SignIngButton'

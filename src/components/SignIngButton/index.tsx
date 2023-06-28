@@ -1,13 +1,13 @@
 import { FiLogOut, FiGithub } from 'react-icons/fi'
 import Image from 'next/image'
-import avatar from '../../../public/avatar.jpeg'
+import avatar from '../../app/assets/avatar.jpeg'
 import styles from './styles.module.scss'
 import { useState } from 'react'
 
 export default function SignInButton() {
   const [logIn, setLogIn] = useState(true)
   const name = 'Wellington'
-  const userAvatar = <Image src={avatar} alt='Foto de perfil'/>
+  const userAvatar = <Image src={avatar} priority={true} alt='Foto de perfil'/>
 
   return logIn ? (
     <>

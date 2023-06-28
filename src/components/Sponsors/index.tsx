@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { FiCreditCard } from "react-icons/fi"
-import avatar from '../../../public/avatar.jpeg'
+import avatar from '../../app/assets/avatar.jpeg'
 import styles from './sponsors.module.scss'
 
 

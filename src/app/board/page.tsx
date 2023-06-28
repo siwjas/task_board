@@ -1,3 +1,4 @@
+import { SponsorButton } from '@/components/SponsorButton'
 import styles from './board.module.scss'
 import { 
   FiPlus, 
@@ -6,6 +7,13 @@ import {
   FiEdit,
   FiClock 
 } from 'react-icons/fi'
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Cadastre suas tarefas',
+  description: 'Organize-se com essa ferramenta fantástica.'
+}
+
 export default function Board() {
   return (
     <>
@@ -76,6 +84,8 @@ export default function Board() {
           </time>
         </div>
       </div>
+      
+      <SponsorButton isDonator={false} />
     </>
   )
 }
