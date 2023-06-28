@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  height: 100%;
+
+  img {
+    cursor: pointer;
+  }
+
+  a {
+    height: 5.5rem;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 1.8rem;
+    transition: ease .5s;
+
+    &:hover {
+      color: #8d99ae;
+      border-bottom: 3px solid #ffb800;
+    }
+  }
+  a.active {
+    color: #8d99ae;
+    border-bottom: 3px solid #ffb800;
+  }
+}

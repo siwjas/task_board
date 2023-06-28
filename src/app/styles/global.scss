@@ -5,7 +5,11 @@
 }
 
 body {
-  background-color: #1b263b;
+  background-color: #edede9;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  min-height: 100vh;
 }
 
 button, a {
@@ -13,4 +17,11 @@ button, a {
   outline: none;
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: inherit;
 }

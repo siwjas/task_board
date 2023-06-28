@@ -1,5 +1,7 @@
 .title {
   text-align: center;
+  line-height: 2.7rem;
+  font-size: 2rem;
   color: #2b2d42;
   font-weight: 700;
     span {
@@ -11,14 +13,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 2rem;
   background-color: #edede9;
   color: #2b2d42;
-  margin: 0 auto;
+  margin: 2rem auto;
+  width: 1024px;
   font-size: 1rem;
-  p {
+
+  h3 {
     text-align: center;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    span {
+      color: #06d6a0;
+    }
   }
-  max-width: 1024px;
-  min-height: 100vh;
+
 }
 

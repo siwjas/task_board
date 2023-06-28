@@ -1,14 +1,15 @@
-import { Roboto } from 'next/font/google'
+import { Ubuntu } from 'next/font/google'
 import './styles/global.scss'
+import { Header } from '@/components/Header'
 
-const roboto = Roboto({ 
+const ubuntu = Ubuntu({ 
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['300', '400', '500', '700']
 })
 
 export const metadata = {
   title: 'Task Board - Organizando suas tarefas!',
-  description: 'Generated NextJs',
+  description: 'A nice App for organize your tasks!',
 }
 
 export default function RootLayout({
@@ -17,8 +18,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>{children}</body>
+    <html lang="en">      
+      <body className={ubuntu.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
