@@ -1,34 +1,41 @@
-.title {
-  text-align: center;
-  line-height: 2.7rem;
-  font-size: 2rem;
-  color: #2b2d42;
-  font-weight: 700;
-    span {
-      color: #fb8500;
-    }
-}
-
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
   background-color: #edede9;
-  color: #2b2d42;
-  margin: 2rem auto;
+  margin: 0 auto;
   width: 1024px;
-  font-size: 1rem;
+  min-height: 100vh;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 88px;
+    justify-content: center;
+    gap: 2rem;
+    color: #2b2d42;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 1rem;
+  }
 
   h3 {
     text-align: center;
     line-height: 3rem;
     font-size: 1.5rem;
+
     span {
       color: #06d6a0;
     }
   }
 
-}
+  .title {
+    text-align: center;
+    line-height: 2.7rem;
+    font-size: 2rem;
+    color: #2b2d42;
+    font-weight: 700;
 
+    span {
+      color: #fb8500;
+    }
+  }
+}
