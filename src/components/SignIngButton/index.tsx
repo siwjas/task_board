@@ -1,15 +1,22 @@
+'use client'
+import { signIn, signOut, useSession } from 'next-auth/react'
 import { FiLogOut, FiGithub } from 'react-icons/fi'
 import Image from 'next/image'
-import avatar from '../../app/assets/avatar.jpeg'
+import avatar from '../../app/assets/usr_img.png'
 import styles from './styles.module.scss'
-import { useState } from 'react'
 
 export default function SignInButton() {
-  const [logIn, setLogIn] = useState(true)
-  const name = 'Wellington'
-  const userAvatar = <Image src={avatar} priority={true} alt='Foto de perfil'/>
+  const { data: session } = useSession()
 
-  return logIn ? (
+  const userAvatar = <Image 
+    src={ session?.user?.image || avatar }
+    priority={true} 
+    width={46} 
+    height={46} 
+    alt='Foto de perfil'
+  />
+
+  return session ? (
     <>
       <button
         className={styles.btnLogedIn}
@@ -17,10 +24,10 @@ export default function SignInButton() {
       >
         {userAvatar}
 
-        Olá {name}
+        Olá {session.user?.name}
         <FiLogOut
           size={28}
-          onClick={() => setLogIn(false)}       
+          onClick={() => signOut()}       
         />
       </button>
     </>
@@ -28,7 +35,7 @@ export default function SignInButton() {
     <>
       <button
         className={styles.btn}
-        onClick={() => setLogIn(true)}
+        onClick={() => signIn('github')}
         type='button'
       >
         <FiGithub size={28} />

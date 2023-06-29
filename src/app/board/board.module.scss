@@ -26,14 +26,16 @@
       background-color: #f7b801;
       border-radius: .35rem;
       transition: ease .5s;
+
       &:hover {
         background-color: #57cc99;
+
         svg {
           transition: ease .5s;
           color: #e5e5e5;
         }
       }
-      
+
       svg {
         color: #141A29;
       }
@@ -78,10 +80,37 @@
       border-radius: .4rem;
       padding: .5rem;
 
+      label {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        flex: 1;
+
+        input {
+          cursor: pointer;
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+
       p {
         cursor: pointer;
         color: #e5e5e5;
         line-height: 1.5rem;
+      }
+    }
+
+    .taskItem {
+      display: flex;
+      justify-content: space-between;
+
+      svg {
+        cursor: pointer;
+        color: #f7b801;
+        transition: ease .5s;
+        &:hover {
+          color: #57cc99;
+        }
       }
     }
 
@@ -100,6 +129,7 @@
       button.edit {
         color: #e5e5e5;
         transition: ease .5s;
+
         &:hover {
           color: #57cc99;
           transform: scale(1.2);
@@ -109,6 +139,7 @@
       button.delete {
         color: #e63946;
         transition: ease .5s;
+
         &:hover {
           transform: scale(1.5);
         }

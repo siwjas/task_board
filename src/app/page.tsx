@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <main className={styles.container}>
-      <Image src={boardUser} alt='Board user' width={400} />
+      <Image src={boardUser} priority={true} alt='Board user' width={400} />
       <section>
         <h1 className={styles.title}>
           Uma ferramenta para seu dia a dia. <br />

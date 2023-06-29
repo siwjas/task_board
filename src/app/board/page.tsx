@@ -34,7 +34,10 @@ export default function Board() {
 
         <section>
           <article className={styles.taskList}>
-            <p>Aprender a criar projetos usanto NextJs aplicando firebase como back.</p>
+            <span className={styles.taskItem}>
+              <p>Aprender a criar projetos usanto NextJs aplicando firebase como back.</p>
+            </span>
+            
             <div className={styles.actions}>
               <div className={styles.taskInfo}>
                 <div>

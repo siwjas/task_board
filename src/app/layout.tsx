@@ -1,8 +1,10 @@
 import { Ubuntu } from 'next/font/google'
 import './styles/global.scss'
 import { Header } from '@/components/Header'
+import Provider from '@/components/Provider'
+import { Session } from 'inspector'
 
-const ubuntu = Ubuntu({ 
+const ubuntu = Ubuntu({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700']
 })
@@ -18,10 +20,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">      
+    <html lang="en">
       <body className={ubuntu.className}>
-        <Header />
-        {children}
+        <Provider >
+          <Header />
+          {children}
+        </Provider>          
       </body>
     </html>
   )
